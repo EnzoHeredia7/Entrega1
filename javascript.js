@@ -82,23 +82,3 @@ function reinicio() {
     window.location.reload();
 }
 
-document.addEventListener('DOMContentLoaded', function () {
-    const video = document.getElementById('miVideo');
-    const playButton = document.getElementById('playButton');
-    const pauseButton = document.getElementById('pauseButton');
-    const restartButton = document.getElementById('restartButton');
-
-    playButton.addEventListener('click', function () {
-        video.play();
-    });
-
-    pauseButton.addEventListener('click', function () {
-        video.pause();
-    });
-
-    restartButton.addEventListener('click', function () {
-        video.currentTime = 0;
-        video.play();
-    });
-});
-
